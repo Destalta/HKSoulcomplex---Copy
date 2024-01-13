@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cadd3b89a5f8f4498288dbb561d8478, type: 3}
+  m_Name: Scene Record
+  m_EditorClassIdentifier: 
+  sceneAdditions: []
+  sceneReplacements:
+  - SceneToReplace: Town
+    Replacement: {fileID: 102900000, guid: 20c47f4490f01174a9028bb412cc0067, type: 3}
+  - SceneToReplace: Opening_Sequence
+    Replacement: {fileID: 102900000, guid: 451d84ba9d2e0944b811610b940fab95, type: 3}
+  - SceneToReplace: Fungus2_01
+    Replacement: {fileID: 102900000, guid: aae079f680858ab4ca781538e45c0fc1, type: 3}
+  - SceneToReplace: Fungus2_02
+    Replacement: {fileID: 102900000, guid: 4a2f161f2067053468399cb1eef3b25e, type: 3}
+  sceneUnions: []
+  transitionRedirects:
+  - GateScene: Tutorial_01
+    GateToChange: right1
+    NewScene: Highway
+    NewGate: left1
+  sceneAdditionPaths: []
+  sceneToReplacePaths:
+  - Town
+  - Opening_Sequence
+  - Fungus2_01
+  - Fungus2_02
+  sceneReplacementPaths:
+  - Assets/Scenes/Highway.unity
+  - Assets/Scenes/NewCutscene.unity
+  - Assets/Scenes/Undergrowth_01.unity
+  - Assets/Scenes/Undergrowth_02.unity
+  sceneToUnionizePaths: []
+  sceneUnionPaths: []
+  transitionRedirects_containingScenes:
+  - Tutorial_01
+  transitionRedirects_gatesToRedirect:
+  - right1
+  transitionRedirects_newDestinationScenes:
+  - Highway
+  transitionRedirects_newDestinationGateNames:
+  - left1
